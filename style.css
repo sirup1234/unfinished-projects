@@ -1,0 +1,353 @@
+html{
+   scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    color:#000;
+ 
+
+}
+/*****************************nav section ************************/
+.logo{
+    color:white;
+    font-size:30px;
+    display:inline-block;
+    position:absolute;
+    left:0;
+}
+span{
+    color:maroon;
+    font-size: 80px;
+    font-family: cursive;
+}
+.hero-section{
+    width:100vw;
+    height:100vh;
+    font-size:20px;
+   position: relative;
+   /* background-image:radial-gradient(#EC7DD5 3px,transparent 3px);
+   background-size: 50px 50px; */
+   /* background:linear-gradient(to bottom , orange,red,pink); */
+   position: relative;
+   background:black;
+   
+}
+.nav-links{
+    position: fixed;
+    height:5rem;
+    width: 100%;
+    background:linear-gradient(rgba(000 000 207 0.9));
+    /* position: absolute; */
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background:#000; */
+    cursor: pointer;
+    text-transform: uppercase;;
+    z-index: 1;
+    /* position: relative; */
+}
+.links{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size:25px;
+    font-family: cursive;
+    margin-left:500px;
+    flex:5 5 5;
+   
+   
+}
+
+.main-links{
+    position: relative;
+    padding: 2px;
+}
+
+.main-links:hover:after {
+  
+    width:90%;
+}
+ .main-links:after{
+    content:"";
+    width:0;
+    height:5px;
+    position: absolute; 
+    left:0;
+    bottom:0; 
+    background:linear-gradient(to bottom , orange,red,pink);
+
+    transition: all 1.5s; 
+    
+} 
+.links a{
+    margin:10px;
+    text-decoration: none;
+    color:white;
+}
+.social-icons{
+    list-style-type: none;
+    display: flex;
+    transition:all 5s linear;
+}
+.social-icons a{
+    margin:10px;
+    color:#fff;
+}
+.social-icons :hover{
+    transform:scale(1.2)
+}
+@media screen and (max-width:1000px){
+     .links{
+        display: none;
+      
+    }
+
+    .social-icons{
+        display: none;
+
+    }
+   
+
+    .para-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:auto;
+    height:500px;
+    }
+    .paragraph{
+        overflow: hidden;
+        overflow-y: scroll;
+        margin-bottom:10px;
+    }
+    .hero-section{
+     
+        border: 10px solid yellow;
+        width:100vw;
+        height:100vh;
+        font-size:20px;
+      
+    }
+    .content{
+        border: 10px solid blue;
+         position: absolute;
+        left:0; 
+        width:80px;
+        height:500px;
+       
+        margin-left:10px;
+    }
+ .content .para{
+border: 10px red solid;
+    position: absolute;
+    left:0;
+    margin-left: 20px;
+    color:red;
+
+ }
+}
+/*******************end of nav section **********************/
+/******************main section******************/
+.hero-image{
+    width:450px;
+    height:1000px;
+    border:0;
+    position:absolute;
+    left:0;
+    bottom: -1px;
+    background:linear-gradient(to top ,black,white);
+    
+   
+   
+}
+.content{
+     margin-top:20px; 
+    position:absolute; 
+    color:#fff;
+    top:35%;
+     width:700px; 
+    font-weight:500;
+    font-family: cursive;
+    left:500px; 
+     text-align: center;
+}
+.explore-btn{
+    color:#fff;
+    background-color:transparent;
+    font-size: 15px;
+    width:100px;
+    height:40px;
+    position: absolute;
+    top:200px;
+    border:2px solid #fff;
+    left:300px;
+    font-weight: 900;
+    text-align:center;
+    padding-top:5px;
+    transition:all 2s;
+    border-radius: 10px;
+    text-transform:uppercase;
+    
+}
+.explore-btn:hover{
+    transform:scale(1.2);
+    background:rgba(0,255,0,0.5);
+    border:5px;
+    letter-spacing: 3px;
+}
+/***************end of hero section********************/
+/*************aboiut-section**************/
+.about-section{
+    height:100vh;
+    width:100vw;
+    /* background-size: 50px 50px;
+    background-image:radial-gradient(#EC7DD5 3px,transparent 3px); */
+   background:linear-gradient(to top , orange,red,pink);
+   
+}
+.about-header{
+    font-weight:900;
+    font-size:60px;
+   font-family: cursive;
+   text-align: center;
+   position: relative;
+}
+.image-new{
+    position: absolute;
+    bottom:-590px;
+    height:300px;
+    margin:50px;
+    border-radius: 20px;
+}
+.paragraph{
+    height:400px;
+    width:300px;
+    border-radius:10px;
+    font-size:20px; 
+    border:5px solid;
+    margin-left:30px;
+    padding:10px;
+    transition: all 3s;
+    transform:rotateX(50deg);
+    
+    
+}
+.image-mon{
+    position: absolute;
+    right: 0;
+    margin: 50px;
+    float: left;
+    width:300px;
+    height: 300px;
+    z-index: 2;
+    border-radius: 35px;
+    transform: rotateX(80deg);
+    transition: all 3s;
+    display: none;
+}
+
+
+
+
+.paragraph .change{
+  transform:rotateX(0deg);
+  transition:all 5s;
+
+}
+.para-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:100px;
+    /* position: absolute;
+    left:20rem;
+    top:130vh;  */
+}
+.paragraph:hover{
+    transform:scale(1.4);
+    transform:skew(-10deg);
+   background:linear-gradient(to bottom , orange,red,pink);
+   cursor: pointer;
+   
+
+}
+
+/************* questions section ********************/
+
+
+.questions{
+    height:100vh;
+    width:100vw;
+    text-align: center;
+}
+.main-title{
+  
+  
+   font-size:35px;
+   text-transform: uppercase;
+   font-weight: 900;
+   font-family: cursive;
+}
+
+/************** skills ******************/
+.container{
+height:100vh;
+display:flex;
+align-items: center;;
+justify-content: center;
+flex-direction: column;
+background:linear-gradient(to bottom , orange,red,pink);;
+}
+
+.container .progress-container{
+  
+}
+
+.container .progress-container h4{
+    margin: 0 0 50px 15px;
+    letter-spacing: .5px;
+}
+
+.container .progress-container .progress-bar{
+    position: relative;
+    width:300px;
+    height:30px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 4px 4px 5px 0px rgba(204 185 185 / .75);
+}
+.container .progress-container .progress-bar span{
+    position: absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height: 100%;
+    color:black;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg,rgba(76,175,80,1) 50%,rgba(50,222,132,1) 100%);
+    transition:width 15s linear;
+}
+
+.skills{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: cursive;
+}
+
+.container h4:nth-child(5){
+margin-bottom:500px;
+}
